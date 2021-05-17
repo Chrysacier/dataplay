@@ -12,15 +12,21 @@
 		<header>
             <nav>
                 <ul>
-                    <li><svg fill="none" height="56" viewBox="0 0 56 56" width="56" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m55.164.571289h-54.951109v54.951111h54.951109zm-50.84462 50.844611v-46.73812h46.73812v46.73812zm28.91382-19.9497 4.8937 6.4409-4.3044 3.7661-5.285-7.0267-1.0435-3.0129-1.0435 3.0129-5.0096 6.8001-5.0435-2.8036 5.3574-7.2605 2.8261-1.883-3.5218-.1674-8.1848-2.6836 1.1739-5.4817 8.837 2.851 2.8696 2.1759-.9565-3.4313-.087-7.7576 5.7827-.5859.087 8.5109-1.1305 3.3476 2.8697-2.0922 7.8376-2.6418 2.3479 5.1051-8.5768 2.8928-3.4349.1256z" fill-rule="evenodd"/></svg></li>
-                    <li>Diameter</li>
-                    <li>Distance</li>
-                    <li></li>
-                    <li></li>
+                    <li><svg fill="none" height="56" viewBox="0 0 56 56" width="56" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m55.164.571289h-54.951109v54.951111h54.951109zm-50.84462 50.844611v-46.73812h46.73812v46.73812zm28.91382-19.9497 4.8937 6.4409-4.3044 3.7661-5.285-7.0267-1.0435-3.0129-1.0435 3.0129-5.0096 6.8001-5.0435-2.8036 5.3574-7.2605 2.8261-1.883-3.5218-.1674-8.1848-2.6836 1.1739-5.4817 8.837 2.851 2.8696 2.1759-.9565-3.4313-.087-7.7576 5.7827-.5859.087 8.5109-1.1305 3.3476 2.8697-2.0922 7.8376-2.6418 2.3479 5.1051-8.5768 2.8928-3.4349.1256z" fill-rule="evenodd"/>Logo Plutz</svg></li>
+                    <li><button class="btn" data-type="Type">Type of planet</button></li>
+                    <li><button class="btn" data-type="Distance">Distance</button></li>
+                    <li><button class="btn" data-type="Diameter">Diameter</button></li>
+                    <li><button class="btn" data-type="Mass">Mass</button></li>
+                    <li><button class="btn" data-type="Rotation_Period">Rotation period</button></li>
+                    <li><button class="btn" data-type="Gravity">Gravity</button></li>
+                    <li><button class="btn" data-type="Mean_Temperature">Mean Temperature</button></li>
+                    <li><button class="btn" data-type="Number_of_satellites">Number of satellites</button></li>
                 </ul>
             </nav>
         </header>
         <main>
+            <a href="experimentation-view-all.html">
+                <svg fill="none" height="10" viewBox="0 0 22 10" width="22" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m17.1308.44331 4.1366 4.13657c.2538.25385.2538.6654 0 .91924l-4.1366 4.13658c-.2539.25384-.6654.25384-.9193 0-.2538-.25384-.2538-.6654 0-.91924l3.027-3.02696h-18.430761v-1.3h18.430761l-3.027-3.02695c-.2538-.25384-.2538-.665399 0-.91924.2539-.253841.6654-.253841.9193 0z" fill="#000" fill-rule="evenodd"/></svg> View all</a>
             <div>
                 <input type="radio" name="point" checked>
                 <input type="radio" name="point">
@@ -31,20 +37,21 @@
                 <input type="radio" name="point">
                 <input type="radio" name="point">
                 <div>
-                    <div>            
-                        <h1>Earth</h1>
-                        <p>
+                    <div data-planet="Mercury"></div>
+                    <div data-planet="Venus"></div>
+                    <div class="planet" data-planet="Earth">  
+                        <img src="assets/images/earth.png" srcset="assets/images/earth@2x.png" alt="La planète Terre.">          
+                        <h1 class="planet__name">Earth</h1>
+                        <p class="planet__infos">
                             Earth is called the “blue planet”. 
                             It is the only planet that has life on it. Life is possible on Earth because of water and because of all the gases which are important for life
                         </p>
                     </div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div data-planet="Mars"></div>
+                    <div data-planet="Jupiter"></div>
+                    <div data-planet="Saturn"></div>
+                    <div data-planet="Uranus"></div>
+                    <div data-planet="Neptune"></div>
                 </div>
             </div>
 
